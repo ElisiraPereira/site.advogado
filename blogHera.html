@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="blog.css">
+</head>
+<header>
+  
+    <div class="men">
+      <img class="logo" src="fotos/Logotipo Nome Minimalista Branco e Preto.png" alt="">
+      <a href="ADV.html">Home</a>
+      <a href="ADV.html#sobrenos">Sobre nós</a>
+     <a href="ADV.html#servicos">Serviços</a>
+     <div class="menu-item">
+   
+    </div>
+   
+    </a>
+    <div class="button-container">
+     <a  class="contact-btn" id="contact-btn" href="contacto.html"> Contacto</a>
+   
+  </div>
+  </header>
+<body>
+    <section id="blog-heranca">
+        <h1> Direito de Herdeiros e Herança</h1>
+    
+        <article>
+            <h2>O que é a Herança?</h2>
+            <p>
+                A herança refere-se à transmissão do patrimônio de uma pessoa falecida para os seus herdeiros. Esse processo é regulado pelo Código Civil Português e envolve a divisão de bens, direitos e obrigações que pertenciam ao falecido.
+            </p>
+    
+            <img src="fotos/Imagem WhatsApp 2024-10-04 às 11.43.40_60fb5d6e.jpg" alt="Direito de Herança" style="width: 100%; height: auto; border-radius: 10px; margin-bottom: 20px;">
+    
+            <h2>Tipos de Herdeiros</h2>
+            <p>
+                Em Portugal, os herdeiros são classificados em:
+            </p>
+            <ul>
+                <li><strong>Herdeiros Legais:</strong> Aqueles que têm direito à herança de acordo com a lei, como cônjuges, filhos, pais e outros parentes diretos.</li>
+                <li><strong>Herdeiros Testamentários:</strong> Aqueles que foram designados pelo falecido em um testamento. O testamento deve ser elaborado de acordo com as normas legais para ser válido.</li>
+            </ul>
+    
+            <h2>Legítima e Quota Disponível</h2>
+            <p>
+                A legislação portuguesa estabelece a legítima, que é a parte da herança que deve ser reservada a certos herdeiros, como filhos e cônjuges. O restante, denominado quota disponível, pode ser livremente distribuído pelo falecido em testamento. A legítima varia de acordo com o número de herdeiros e o estado civil do falecido.
+            </p>
+    
+            <h2>O Processo de Sucessão</h2>
+            <p>
+                O processo de sucessão pode ser judicial ou extrajudicial, dependendo da complexidade da herança e da existência de conflitos entre os herdeiros. A sucessão judicial ocorre por meio de um tribunal, enquanto a sucessão extrajudicial é realizada através de escritura pública em cartório, quando todos os herdeiros concordam com a divisão.
+            </p>
+    
+            <h2>Imposto sobre Sucessões e Doações</h2>
+            <p>
+                Em Portugal, as heranças estão sujeitas ao Imposto do Selo, que deve ser pago pelos herdeiros. As taxas variam dependendo do valor da herança e da relação entre o falecido e os herdeiros. É importante consultar um advogado para compreender as obrigações fiscais associadas à herança.
+            </p>
+    
+            <h2>Comentários</h2>
+            <div class="comentarios">
+                <textarea placeholder="Deixe sua dúvida..." rows="4"></textarea>
+                <button type="button">Enviar</button>
+            </div>
+        </article>
+    </section>
+    
+    <footer>
+        <div class="footer-container">
+            <div class="footer-left">
+                <h3 class="footer1">Laura Sotto Mayor&Rui Manuel Fernandes</h3>
+                <p>&copy; 2024 Todos os direitos reservados.</p>
+            </div>
+            <div class="footer-center">
+                <ul>
+                    <li><a href="ADV.html">Home</a></li>
+                    <li><a href="ADV.html#sobrenos">Sobre Nós</a></li>
+                    <li><a href="ADV.html#servicos">Serviços</a></li>
+                    
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <a href="#" class="back-to-top" id="backToTop" title="Voltar ao topo">
+        &#8679; <!-- Seta para cima -->
+    </a>
+    <script>
+        // Mostrar/Ocultar o botão de voltar ao topo
+        const backToTopButton = document.getElementById("backToTop");
+    
+        window.onscroll = function() {
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                backToTopButton.style.display = "block"; // Exibe o botão
+            } else {
+                backToTopButton.style.display = "none"; // Oculta o botão
+            }
+        };
+    
+        // Ação ao clicar no botão
+        backToTopButton.addEventListener("click", function(e) {
+            e.preventDefault();
+            window.scrollTo({ top: 0, behavior: 'smooth' }); // Rola suavemente para o topo
+        });
+    </script>
+</body>
+</html>

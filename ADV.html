@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@600&display=swap" rel="stylesheet"> 
+    
+</head>
+<body>
+    
+<header>
+  
+  <div class="men">
+    <img class="logo" src="fotos/Logotipo Nome Minimalista Branco e Preto.png" alt="">
+  <a href="#sobrenos">Sobre-nós</a>
+   <a href="#servicos">Serviços</a>
+   <div class="menu-item">
+   <a   href="#">Blog
+    <div class="submenu">
+      <a href="blogHera.html">Direito á Herança</a>
+      <a href="blogFam.html">Direito de Familia</a>
+      <a href="blogNac.html">Direito Residência e Nacionalidade</a>
+      
+      
+    </div>
+  </div>
+ 
+  </a>
+  <div class="button-container">
+   <a  class="contact-btn" id="contact-btn" href="contacto.html"> Contacto</a>
+ 
+</div>
+</header>
+
+<section id="Home" >
+  <div class="home">
+  <div class="img">
+    <img class="img1" src="fotos/Captura de ecrã 2024-09-24 160758.png" alt="">
+    <!--<div class="titulo">
+      <h1>Serviços Jurídicos de Excelência</h1>
+      <h2>Defendendo seus direitos com seriedade e compromisso</h2>
+    </div> -->
+    <div class="duvidas">
+
+    </div>
+    <div class="areas">
+      <div class="areas-atuacao">
+        <div class="slider">
+          <div class="slide active"> 
+          
+          </div>
+          <div id="slide"><h1>Há mais de 10 anos <br> Servindo com excelência </h1></div>
+         
+          <div class="slide" id="texto1">  Conscientes do valor que cada passo de uma transação tem para o cliente,somos uma sociedade de advogados que assume, diariamente, um compromisso de clareza, transparência, independência e defesa intransigente de cada caso, com experiência e inovação.  
+            <br>
+            Com segurança no nosso conhecimento, destacamos pela solidez técnica e rigor profissional, mas também pelas qualidades humanas com que enriquecem a Vida, o cliente e a comunidade em que vivemos. 
+            E sempre, com uma atitude de respeito perante todos os intervenientes da Justiça.
+           
+        </div>
+          </div>
+          <div class="slide" id="ch"> 
+            <h1 class="baixar"> Atuamos em múltiplas áreas, Presencial ou Online</h1>
+            <a id="button-container" class="contact-btn" href="contacto.html">CONTACTE-NOS</a>
+        </div>
+        
+          <!-- Botões para avançar e retroceder -->
+          <button class="prev" onclick="prevSlide()">❮</button>
+          <button class="next" onclick="nextSlide()">❯</button>
+        </div>
+        <!-----espera
+        <img class="img2" src="fotos/family.png" alt="">
+        <br>Familia e Menores
+      </div>
+      <div class="areas-atuacao">
+        <img class="img2" src="fotos/suitcase.png" alt="">
+        <br>Direito Civil e Comercial
+       
+      </div>
+      <div class="areas-atuacao">
+
+       
+        
+        <img class="img2" src="fotos/engineers.png" alt="">
+        <br>Direito do Trabalho
+        
+      </div>
+      <div class="areas-atuacao">
+        <img class="img2" src="fotos/subpoena.png" alt="">
+        <br>Direito Criminal
+        
+      </div>
+      <div class="areas-atuacao">
+        <img class="img2" src="fotos/monetary-policy.png" alt="">
+        <br>Direito Fiscal <br>
+        
+      </div>
+      <div class="areas-atuacao">
+        <img class="img2" src="fotos/list-to-do.png" alt="">
+        <br>Outras areas de atividades
+      </div>
+      -->
+    </div>
+    
+  </div>
+  
+</div>
+
+  
+  
+</section>
+<section id="sobrenos">
+  <h1>Sobre Nós</h1>
+  
+  <div class="container-advogados">
+      <div class="advogado">
+          <div class="foto-advogado">
+              <img src="fotos/OIPad.jpeg" alt="Advogada Laura Sotto Mayor">
+          </div>
+          <div class="info-advogado">
+              <h2>Laura Sotto Mayor</h2>
+              Inscrita na Ordem dos Advogados desde 2010
+              Licenciada em Direito pela Universidade Portucalense, em 2008
+              Mais de 10 anos de experiência, atendendo clientes com dedicação e excelência.
+          </div>
+      </div>
+
+      <div class="advogado">
+          <div class="foto-advogado">
+              <img src="fotos/R.jpeg" alt="Advogado Rui Manuel Fernandes">
+          </div>
+          <div class="info-advogado">
+              <h2>Rui Manuel Fernandes</h2>
+              Inscrito na Ordem dos Advogados desde 2009
+              Licenciado em Direito pela Universidade de Lisboa, em 2007
+              Experiência em mediação e resolução de conflitos, sempre priorizando os interesses dos clientes.
+          </div>
+      </div>
+  </div>
+</section>
+
+
+
+<section id="servicos">
+  <h1>Serviços</h1>
+  <input type="text" id="pesquisa" placeholder="Procurar serviço...">
+  <div id="servicos-container">
+      <div class="servico" id="consultoria">
+          <h2>Direito Penal</h2>
+           <p> Defesa em processos criminais, acompanhamento de investigações, recursos penais, queixas-crime, defesa contra crimes de furto, roubo, homicídio, crimes de colarinho branco, entre outros.</p>
+          <a href="contacto.html"> <button  class="btn-contato">Contato</button></a>
+      </div>
+      <div class="servico" id="advocacia-criminal">
+          <h2>Direito Imobiliário</h2>
+          <p>Lida com transações e disputas relacionadas a propriedades e imóveis.</p>
+          <p>Assessoria em compra e venda de imóveis, contratos de arrendamento, regularização de propriedades, disputas de posse, partilhas, licenciamento de construção e urbanismo.</p>
+          <a href="contacto.html"> <button  class="btn-contato">Contato</button></a>
+      </div>
+      <div class="servico" id="contratos">
+          <h2> Direito Fiscal e Contencioso Tributário</h2>
+          <p> Planeamento fiscal, contencioso tributário, apoio em fiscalizações, regularização fiscal, defesas em execuções fiscais, e orientação sobre o cumprimento de obrigações fiscais</p>
+          <a href="contacto.html"> <button  class="btn-contato">Contato</button></a>
+      </div>
+      <div class="servico" id="contratos">
+        <h2>Direito do Trabalho (Laboral)</h2>
+        <p>Consultoria sobre contratos de trabalho, gestão de despedimentos, negociação de acordos coletivos, contencioso laboral, defesa em processos de assédio ou discriminação, litígios relacionados a salários ou compensações.</p>
+        <a href="contacto.html"> <button  class="btn-contato">Contato</button></a>
+    </div>
+    <div class="servico" id="contratos">
+      <h2>Direito Sucessório</h2>
+      <p>Elaboração de testamentos, gestão de partilhas, processos de herança, planejamento sucessório e representação em disputas entre herdeiros.</p>
+      <a href="contacto.html"> <button  class="btn-contato">Contato</button></a>
+  </div>
+  <div class="servico" id="contratos">
+    <h2> Direito das Sociedades e Empresas</h2>
+    <p>Constituição de sociedades, elaboração de estatutos, fusões e aquisições, reestruturações empresariais, responsabilidade dos administradores e apoio na governança corporativa.</p>
+    <a href="contacto.html"> <button  class="btn-contato">Contato</button></a>
+</div>
+<div class="servico" id="contratos">
+  <h2>Direito da Família</h2>
+  <p>Aconselhamento em casamento e litígios em divórcios, regulação de responsabilidades parentais, processos de adoção, partilha de bens e acompanhamento de processos de alimentos.</p>
+  <a href="contacto.html"> <button  class="btn-contato">Contato</button></a>
+</div>
+<div class="servico" id="contratos">
+  <h2>Direito Civil</h2>
+  <p>Litígios contratuais, ações de responsabilidade civil, elaboração de contratos, consultoria em direitos de propriedade e resolução de disputas em tribunal.</p>
+  <a href="contacto.html"> <button  class="btn-contato">Contato</button></a>
+</div>
+<div class="servico" id="contratos">
+  <h2>Direito Administrativo e Constitucional</h2>
+  <p>Contencioso administrativo, impugnação de atos administrativos, processos de licenciamento e contratos públicos, defesa de direitos constitucionais, e questões de incompatibilidades de direitos fundamentais.</p>
+  <a href="contacto.html"> <button  class="btn-contato">Contato</button></a>
+</div>
+<div class="servico" id="contratos">
+  <h2>Propriedade Industrial, Marcas e Patentes</h2>
+  <p>Registo de marcas e patentes, defesa contra infrações de propriedade intelectual, litígios sobre uso indevido de marcas, contratos de licenciamento e proteção de direitos autorais.</p>
+  <a href="contacto.html"> <button  class="btn-contato">Contato</button></a>
+</div>
+<div class="servico" id="contratos">
+  <h2>Insolvência e Recuperação</h2>
+  <p>Reestruturação de dívidas, planos de insolvência, recuperação de empresas, processos de insolvência, gestão de massa falida e apoio em planos de recuperação.</p>
+  <a href="contacto.html"> <button  class="btn-contato">Contato</button></a>
+</div>
+<div class="servico" id="contratos">
+  <h2>Direito de Nacionalidade e Legalidade</h2>
+  <p>Regularização de estrangeiros em Portugal <br>
+    Obtenção de vistos <br>
+    Autorização de residência <br>
+    Regularização de imigrantes <br>
+    Recursos e contencioso <br>
+    Reagrupamento familiar.</p>
+  <a href="contacto.html"> <button  class="btn-contato">Contato</button></a>
+</div>
+      <!-- Adicione mais serviços conforme necessário -->
+  </div>
+</section>
+<!-- Seta para voltar ao topo -->
+<a href="#" class="voltar-ao-topo" id="voltarTopo" title="Voltar ao topo">
+  &#8679; <!-- Código Unicode para a seta para cima -->
+</a>
+
+
+<script>
+  let currentIndex = 0;
+  const slides = document.querySelectorAll('.slide');
+  let slideInterval;
+
+  function showSlide(index) {
+    slides.forEach((slide) => slide.classList.remove('active'));
+    slides[index].classList.add('active');
+  }
+
+  function nextSlide() {
+    currentIndex = (currentIndex + 1) % slides.length;
+    showSlide(currentIndex);
+  }
+
+  function prevSlide() {
+    currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+    showSlide(currentIndex);
+  }
+
+  // Iniciar o slider automático (7 segundos)
+  function startSlider() {
+    slideInterval = setInterval(nextSlide, 7000);
+  }
+
+  // Parar o slider automático
+  function stopSlider() {
+    clearInterval(slideInterval);
+  }
+
+  // Começar o slider quando a página carregar
+  startSlider();
+
+  // Parar o slider quando o mouse estiver sobre ele
+  const slider = document.querySelector('.slider');
+  slider.addEventListener('mouseenter', stopSlider);
+
+  // Retomar o slider quando o mouse sair
+  slider.addEventListener('mouseleave', startSlider);
+</script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+      const letters = document.querySelectorAll('.letter');
+      // Espalha as letras
+      setTimeout(() => {
+          letters.forEach((letter, index) => {
+              setTimeout(() => {
+                  letter.classList.add('explode');
+              }, index * 100);  // Diferencia o tempo de cada letra para um efeito de cascata
+          });
+      }, 500);
+
+      // Organiza as letras após um tempo
+      setTimeout(() => {
+          letters.forEach(letter => {
+              letter.classList.remove('explode');
+              letter.classList.add('organize');
+          });
+      }, 3000); // Após 3 segundos, as letras começam a se organizar
+  });
+</script>
+<script src="novo.js"></script>
+
+<footer>
+  <div class="footer-container">
+      <div class="footer-left">
+          <h3 class="footer1">Laura Sotto Mayor&Rui Manuel Fernandes</h3>
+          <p class="cor">&copy; 2024 Todos os direitos reservados.</p>
+      </div>
+      <div class="footer-center">
+          <ul>
+              <li><a href="ADV.html">Home</a></li>
+              <li><a href="ADV.html#sobrenos">Sobre Nós</a></li>
+              <li><a href="ADV.html#servicos">Serviços</a></li>
+              
+          </ul>
+      </div>
+  </div>
+</footer>
+
+<body>
+    
+</body>
+</html>
+</body>
+</html>

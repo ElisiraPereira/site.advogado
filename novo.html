@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laura Sotto Mayor & Rui Manuel Fernandes - Advogados</title>
+    <link rel="stylesheet" href="novo.css">
+</head>
+<body>
+    <div class="duvidas"></div>
+<div class="areas">
+  <div class="areas-atuacao">
+    <div class="slider">
+      <div class="slide">
+        <!-- Texto animado -->
+        <div class="animated-text" id="text-container">
+            <span class="letter">H</span>
+            <span class="letter">á</span>
+            <span class="letter"> </span>
+            <span class="letter">m</span>
+            <span class="letter">a</span>
+            <span class="letter">i</span>
+            <span class="letter">s</span>
+            <span class="letter"> </span>
+            <span class="letter">d</span>
+            <span class="letter">e</span>
+            <span class="letter"> </span>
+            <span class="letter">1</span>
+            <span class="letter">0</span>
+            <span class="letter"> </span>
+            <span class="letter">a</span>
+            <span class="letter">n</span>
+            <span class="letter">o</span>
+            <span class="letter">s</span>
+            <span class="letter">,</span>
+            <span class="letter"> </span>
+            <span class="letter">a</span>
+            <span class="letter">t</span>
+            <span class="letter">e</span>
+            <span class="letter">n</span>
+            <span class="letter">d</span>
+            <span class="letter">e</span>
+            <span class="letter">n</span>
+            <span class="letter">d</span>
+            <span class="letter">o</span>
+            <span class="letter"> </span>
+            <span class="letter">c</span>
+            <span class="letter">l</span>
+            <span class="letter">i</span>
+            <span class="letter">e</span>
+            <span class="letter">n</span>
+            <span class="letter">t</span>
+            <span class="letter">e</span>
+            <span class="letter">s</span>
+        </div>
+      </div>
+      <div class="slide active">
+        <h1>Serviços Jurídicos de Excelência</h1>
+        <p>Defendendo seus direitos com seriedade e compromisso</p>
+      </div>
+      <div class="slide">
+        Conscientes do valor que cada passo de uma transação tem para o cliente, somos uma sociedade de advogados que assume, diariamente, um compromisso de clareza, transparência, independência e defesa intransigente de cada caso, com experiência e inovação.  
+        Com segurança no nosso conhecimento, destacamos pela solidez técnica e rigor profissional, mas também pelas qualidades humanas com que enriquecem a Vida, o cliente e a comunidade em que vivemos. E sempre, com uma atitude de respeito perante todos os intervenientes da Justiça.
+      </div>
+      <div class="slide">Conteúdo 3</div>
+      <div class="slide">Conteúdo 4</div>
+
+      <!-- Botões para avançar e retroceder -->
+      <button class="prev" onclick="prevSlide()">❮</button>
+      <button class="next" onclick="nextSlide()">❯</button>
+    </div>
+  </div>
+</div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+  const letters = document.querySelectorAll('.animated-text .letter');
+
+  // Espalha as letras com coordenadas aleatórias
+  letters.forEach(letter => {
+    const randomX = (Math.random() * 200 - 100); // Valor aleatório entre -100 e 100
+    const randomY = (Math.random() * 200 - 100); // Valor aleatório entre -100 e 100
+    letter.style.transform = `translate(${randomX}px, ${randomY}px)`;
+    letter.style.opacity = '1';
+  });
+
+  // Organiza as letras após um tempo
+  setTimeout(() => {
+    letters.forEach(letter => {
+      letter.style.transform = `translate(0, 0)`;
+    });
+  }, 2000); // Após 2 segundos, as letras começam a se organizar
+});
+</script>
+</body>
+</html>

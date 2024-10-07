@@ -1,0 +1,372 @@
+:root{
+  --primary:  rgba(138,101,7,1);
+  --dark:#161616;
+  --background: rgb(192,193,26);
+  --backgrounde:#555;
+  --pure:#FFFFFF;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    
+  }
+  
+  
+  #margin{
+      padding: 0;
+      bottom: 0;
+  }
+  
+  .men{
+   background-color: var(--pure);
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   position: relative;
+  
+  
+  
+   
+  }
+  
+  .men a {
+      padding-right: 13px;
+      color: var(--dark);
+      text-decoration: none;
+      font-size: 1.7rem;
+      
+  }
+  
+  .men a:hover{
+      background-color: var(--primary);
+      box-shadow: inset 0 0 8px var(--dark);
+      color: var(--dark);
+      border-radius: 10px;
+      padding: 15px ;
+    
+  
+  }
+  
+  #menu{
+      padding-right: 35rem;
+      color: var(--pure);
+   
+  }
+  
+  
+  .menu-item{
+      position: relative;
+  }
+  
+  .submenu{
+      display: none;
+   position: absolute;
+  border-radius: 15px;
+      background-color:  var(--backgrounde);
+      top: 100%;
+      margin-left: -40px;
+      box-shadow: var(--primary);
+      opacity: 1;
+      z-index: 1;
+    
+      
+  }
+  
+  .submenu a{
+      display: block;
+      padding: 8px 13px;
+      text-decoration: none;
+      color: var(--pure);
+  }
+  
+  .submenu a:hover{
+      background-color: var(--primary);
+  }
+  
+  
+  .menu-item:hover .submenu{
+      display: block;
+  }
+  
+  .logo{
+      float: left;
+    margin-right: 560px;
+    width: 250px;
+  
+  
+  }
+  
+  
+  .titulo h1{
+  display: flex;
+  justify-content: center;
+  color: var(--primary);
+  }
+  .titulo h2{
+  display: flex;
+  justify-content: center;
+  color: var(--primary);
+   }
+  
+   .titulo{
+      width: 100vh;
+      height: 190px;
+      top: 160px;
+      left: 360px;
+    
+      position: absolute;
+      background: rgba(17, 17, 17, 0.6);
+      opacity: 0;
+      transition: 0.6s;
+     
+   }
+  .titulo:hover{
+      opacity: 1;
+  }
+  .titulo > *{
+      transform: translateY(25);
+      transition: transform 0.6s;
+  }
+  .titulo:hover > *{
+      transform: translateY(0px);
+     
+  }
+  
+   .img1{
+  
+      width: 100%;
+      margin: auto;
+      opacity: 1;
+      background-image: var(--dark);
+      filter: brightness(50%);
+      transition: filter 0.3s ease; 
+   }
+  .img2{
+      width: 40%;
+      height: 50%;
+  }
+
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: url('your-background-image.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 50px;
+    max-width: 1000px;
+    margin: auto;
+    gap: 50px;
+}
+
+.contact-info {
+    color: rgb(31, 29, 29);
+    max-width: 400px;
+}
+
+.contact-info ul {
+    list-style: none;
+    line-height: 2;
+}
+
+.contact-form {
+    background-color: var(--pure);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 600px;
+    
+}
+
+.contact-form h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 2px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+.contact-form button {
+    background-color: var(--primary);
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: var(--primary);
+}
+
+/* Responsividade para dispositivos menores */
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-info {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .contact-form {
+        width: 100%;
+    }
+}
+
+
+.contact-info ul {
+  list-style: none;
+  line-height: 2;
+  padding-left: 0;
+}
+
+.contact-info li {
+  margin-bottom: 15px;
+  font-size: 18px;
+  color: #333;
+}
+
+.contact-info li i {
+  margin-right: 10px;
+  color: var(--primary);
+  font-size: 20px;
+}
+
+
+.location{
+  width: 80%;
+  height: 60%;
+  margin: auto;
+  padding: 80px 0;
+}
+
+.location iframe{
+  width: 100%;
+}
+
+
+footer {
+  background-color: #333;
+  color: white;
+  padding: 30px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1000px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.footer-left {
+  font-size: 16px;
+}
+
+.footer-left h3 {
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: var(--primary);
+}
+
+.footer-left p {
+  margin: 0;
+}
+
+.footer-center ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.footer-center ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.footer-center ul li a:hover {
+  color: var(--primary);
+}
+
+/* Responsividade para dispositivos menores */
+@media (max-width: 768px) {
+  .footer-container {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .footer-center ul {
+      justify-content: center;
+      margin-top: 20px;
+  }
+}
+
+
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color:var(--primary);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  display: none; /* Inicialmente oculto */
+  z-index: 1000; /* Para que fique acima de outros elementos */
+  transition: background-color 0.3s;
+}
+
+.back-to-top:hover {
+  background-color: var(--primary); /* Cor quando o mouse está sobre o botão */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .back-to-top {
+      bottom: 15px;
+      right: 15px;
+      padding: 8px 12px;
+      font-size: 18px;
+  }
+}

@@ -1,0 +1,749 @@
+:root{
+--primary:  rgba(138,101,7,1);
+--dark:#161616;
+--background: rgb(192,193,26);
+--backgrounde:#555;
+--pure:#FFFFFF;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  
+}
+
+
+#margin{
+    padding: 0;
+    bottom: 0;
+}
+
+.men{
+ background-color: var(--pure);
+ width: 100%;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ position: relative;
+
+
+
+ 
+}
+
+.men a {
+    padding-right: 13px;
+    color: var(--dark);
+    text-decoration: none;
+    font-size: 1.7rem;
+    
+}
+
+.men a:hover{
+    background-color: var(--primary);
+    box-shadow: inset 0 0 8px var(--dark);
+    color: var(--dark);
+    border-radius: 10px;
+    padding: 15px ;
+  
+
+}
+
+#menu{
+    padding-right: 35rem;
+    color: var(--pure);
+ 
+}
+
+
+.menu-item{
+    position: relative;
+}
+
+.submenu{
+    display: none;
+ position: absolute;
+border-radius: 15px;
+    background-color:  var(--backgrounde);
+    top: 100%;
+    margin-left: -40px;
+    box-shadow: var(--primary);
+    opacity: 1;
+    z-index: 1;
+  
+    
+}
+
+.submenu a{
+    display: block;
+    padding: 8px 13px;
+    text-decoration: none;
+    color: var(--pure);
+}
+
+.submenu a:hover{
+    background-color: var(--primary);
+}
+
+
+.menu-item:hover .submenu{
+    display: block;
+}
+
+.logo{
+    float: left;
+  margin-right: 560px;
+  width: 250px;
+
+
+}
+
+
+.titulo h1{
+display: flex;
+justify-content: center;
+color: var(--primary);
+}
+.titulo h2{
+display: flex;
+justify-content: center;
+color: var(--primary);
+ }
+
+ .titulo{
+    width: 100vh;
+    height: 190px;
+    top: 160px;
+    left: 360px;
+  
+    position: absolute;
+    background: rgba(17, 17, 17, 0.6);
+    opacity: 0;
+    transition: 0.6s;
+   
+ }
+.titulo:hover{
+    opacity: 1;
+}
+.titulo > *{
+    transform: translateY(25);
+    transition: transform 0.6s;
+}
+.titulo:hover > *{
+    transform: translateY(0px);
+   
+}
+
+ .img1{
+
+    width: 100%;
+    margin: auto;
+    opacity: 1;
+    background-image: var(--dark);
+    filter: brightness(50%);
+    transition: filter 0.3s ease; 
+ }
+.img2{
+    width: 40%;
+    height: 50%;
+}
+
+.areas{
+    display: flex;
+justify-content: space-between;
+align-items: flex-start;
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+    background-color: rgba(0, 0, 0, 0.5); 
+   
+
+}
+
+.areas-atuacao{
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+    
+    border-radius: 9px;
+    box-shadow: 0 2px 10px rgba(34, 32, 32, 0.1);
+    background-color: #3b3838;
+    color: black;
+    padding: 14px;
+    text-align: center;
+    width: 55%;
+    border-radius: 6px;
+    font-family: Arial, sans-serif;
+}
+/* Estilo do slider */
+.slider {
+    width: 100%;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* Cada slide */
+  .slide {
+    position: absolute;
+    top: 0;
+    left: 100%;  /* Coloca fora da vista */
+    width: 100%;
+    height: 100%;
+    background-color: lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: left 0.5s ease-in-out;
+    opacity: 0;
+  }
+
+  
+        .slide   {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+      
+    
+
+  .slide.active {
+    left: 0;    /* Slide ativo na vista */
+    opacity: 1;
+    
+  }
+ 
+ 
+  
+#slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh; /* Ocupa a altura total da tela */
+    text-align: center; /* Centraliza o texto horizontalmente */
+  }
+  
+  #slide h1 {
+    overflow: hidden;
+    animation: animate 3s linear infinite;
+    filter: hue-rotate(0deg);
+    font-family: 'Playfair Display', serif;
+    font-size: 4em;
+    font-weight: 700;
+    background: linear-gradient(90deg, #92852f, #ff5f6d, #ffc371);
+    background-size: 150%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: shine 4s linear infinite;
+    text-shadow: 0px 0px 8px rgba(121, 108, 28, 0.8), 0px 0px 16px rgba(255, 95, 109, 0.6);
+    letter-spacing: 0.05em;
+    margin: 0;
+    
+  
+  }
+  
+  /* Animação para fazer o brilho correr no texto */
+  @keyframes shine {
+    0% {
+      background-position: 0%;
+    }
+    100% {
+      background-position: 200%;
+    }
+  }
+  
+  #ch{
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),url(fotos/Captura\ de\ ecrã\ 2024-09-24\ 160758.png);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+
+}
+#ch h1{
+    color: var(--pure);
+    size: 4rem;
+}
+
+
+  /* Estilo das setas */
+  button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+  }
+  
+  button.prev {
+    left: 10px;
+  }
+  
+  button.next {
+    right: 10px;
+  }
+  
+  button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+.slide  .container  {
+    position: relative;
+    font-size: 40px;
+    font-weight: bold;
+    color: #333;
+}
+
+#texto1{
+    background-color: var(--dark);
+    color: var(--pure);
+    font-size: 1.4rem;
+    text-align: center;
+    }
+/*---CONTACT*/
+
+.contact-us{
+    width: 80%;
+    margin: auto;
+    
+}
+
+.experimentar{
+border-radius: 20px;
+background: rgb(238,174,174);
+background: radial-gradient(circle, rgba(238,174,174,0.8883928571428571) 0%, rgba(148,214,233,1) 40%);
+
+
+}
+
+.experiment {
+    border-radius: 20px;
+
+background: radial-gradient(circle, rgba(238,174,174,0.8883928571428571) 0%, rgba(148,214,233,1) 40%);
+
+}
+
+
+.contact-1{
+    flex-basis: 48%;
+    margin-bottom: 30px;
+    border-radius: 30px;
+ 
+}
+
+.contact-1 div{
+    display: flex;
+    align-items: center ;
+    margin-bottom: 40px;
+ 
+}
+
+.contact-1 div .fa{
+    font-size: 28px;
+    color: #f44336;
+    margin: 10px;
+    margin-right: 30px;
+}
+
+.contact-1 div p{
+    padding: 0;
+}
+
+.contact-1 div h5{
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #555;
+    font-weight: 400;
+}
+
+.contact-1 input, .contact-1 textarea{
+width: 100%;
+padding: 15px;
+margin-bottom: 17px;
+outline: none;
+border: 1px solid #ccc;
+box-sizing: border-box;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center; /* Centraliza o botão horizontalmente */
+    align-items: center; /* Centraliza o botão verticalmente */
+    margin-top: 50px; /* Adiciona um espaço acima do botão */
+  }
+  
+  .contact-btn {
+    
+   
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem; /* Tamanho reduzido da fonte */
+    padding: 10px 10px; /* Tamanho do botão */
+    color: #fff; /* Cor do texto */
+    background-color: var(--backgrounde); /* Cor neutra */
+    border: 2px solid transparent; /* Borda inicial */
+    border-radius: 20px; /* Bordas arredondadas */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+    position: relative; /* Para posicionar o efeito de brilho */
+    text-transform: uppercase; /* Texto em maiúsculas */
+    text-decoration: none;
+    outline: none; /* Remove o contorno padrão do botão */
+    transition: background-color 0.3s, transform 0.3s; /* Efeitos de transição */
+  
+  }
+  
+  /* Efeito ao passar o mouse */
+  .contact-btn:hover {
+    background-color: #5a6268; /* Muda a cor ao passar o mouse */
+    transform: scale(1.05); /* Aumenta o tamanho ao passar o mouse */
+  }
+  
+  /* Efeito de brilho */
+  .contact-btn::after {
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 20px; /* Bordas arredondadas */
+    background: rgba(255, 255, 255, 0.2); /* Brilho suave */
+    opacity: 0; /* Inicialmente invisível */
+    transition: opacity 0.3s; /* Efeito de transição */
+  }
+  
+  .contact-btn:hover::after {
+    opacity: 1; /* Torna visível ao passar o mouse */
+    animation: pulse 1.5s infinite; /* Animação de pulsar */
+  }
+  
+  /* Animação de pulsar */
+  @keyframes pulse {
+    0%, 100% {
+      transform: scale(1); /* Tamanho original */
+    }
+    50% {
+      transform: scale(1.1); /* Aumenta um pouco o tamanho */
+    }
+  }
+  #button-container{
+    display: inline-block;
+    
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 10px 34px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+   
+  }
+
+ #contact-btn{
+    bottom: 1.5rem;
+    padding:10px 15px;
+    font-size: 20px;
+    left: 2rem;
+ }
+
+.foto {
+  margin-bottom: 15px;
+}
+
+.foto img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%; /* Deixa a imagem circular */
+  max-height: 150px; /* Limita a altura da imagem */
+}
+/* #sobre-nos {
+  text-align: center;
+  padding: 50px;
+  background-color: #f9f9f9;
+}
+
+.advogados-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.advogado {
+  background-color: #fff;
+  border: 2px solid #4CAF50;
+  border-radius: 10px;
+  padding: 20px;
+  width: 300px; /* Largura fixa para as caixas 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+*/
+h1 {
+  margin-bottom: 30px;
+  font-size: 2.5rem;
+}
+
+h2 {
+  color: #4CAF50;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 1rem;
+  color: #333;
+}
+
+
+
+
+#servicos {
+  padding: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+}
+
+#pesquisa {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+}
+
+#servicos-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  justify-items: stretch;
+}
+
+
+.hide {
+  display: none !important; /* Oculta as caixas que não correspondem à pesquisa */
+}
+
+
+.servico {
+  border: 2px solid var(--primary);
+  padding: 15px;
+  border-radius: 10px;
+  transition: transform 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%; 
+  box-sizing: border-box;
+  flex: 1 1 calc(33.333% - 20px); 
+}
+
+.servico:hover {
+  transform: scale(1.05);
+  border-color: var(--primary);
+}
+
+h2 {
+  color: var(--primary);
+}
+
+p {
+  color:solid #555;
+  margin-bottom: 15px;
+}
+
+.btn-contato {
+position: relative;
+  padding: 10px;
+  background-color: var(--primary);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
+ 
+}
+
+.btn-contato:hover {
+  background-color:var(--backgrounde);
+
+}
+
+#sobrenos {
+  padding: 50px;
+  background-color: #f9f9f9;
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 50px;
+}
+
+.container-advogados {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.advogado {
+  width: 45%; /* Cada advogado ocupará 45% da largura da página */
+  margin-bottom: 50px;
+}
+
+.foto-advogado img {
+  width: 200px;
+  height: auto;
+  border-radius: 20%;
+  margin-bottom: 20px;
+}
+
+.info-advogado {
+  text-align: center;
+  color: #555;
+}
+
+.info-advogado h2 {
+  font-size: 2rem;
+  color: var(--backgrounde);
+  margin-bottom: 10px;
+}
+
+.info-advogado p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+/* Responsivo para telas menores */
+@media (max-width: 768px) {
+  .advogado {
+      width: 100%;
+  }
+}
+
+
+/* Estilos da seta de rolagem */
+.voltar-ao-topo {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 24px;
+  cursor: pointer;
+  display: none; /* Escondida inicialmente */
+  z-index: 1000; /* Para garantir que fique acima de outros elementos */
+  animation: bounce 1s infinite; /* Animação de bounce */
+}
+
+/* Animação de "pular" (bounce) */
+@keyframes bounce {
+  0%, 100% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(-10px);
+  }
+}
+
+/* Exibe a seta quando a página rola */
+.show {
+  display: block;
+}
+
+
+
+
+
+footer {
+  background-color: #333;
+  color: white;
+  padding: 30px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1000px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.footer-left {
+  font-size: 16px;
+}
+
+.footer-left h3 {
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: var(--primary);
+}
+
+.footer-left p {
+  margin: 0;
+}
+
+.footer-center ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.footer-center ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.footer-center ul li a:hover {
+  color: var(--primary);
+}
+
+.footer1{
+  font-size: 10px;
+}
+/* Responsividade para dispositivos menores */
+@media (max-width: 768px) {
+  .footer-container {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .footer-center ul {
+      justify-content: center;
+      margin-top: 20px;
+  }
+}
+
+.cor{
+  color: var(--pure);
+}

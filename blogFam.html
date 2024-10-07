@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="blog.css">
+ 
+</head>
+<header>
+  
+    <div class="men">
+      <img class="logo" src="fotos/Logotipo Nome Minimalista Branco e Preto.png" alt="">
+      <a href="ADV.html">Home</a>
+     <a href="ADV.html#sobrenos">Sobre nós</a>
+     <a href="ADV.html#servicos">Serviços</a>
+     <div class="menu-item">
+   
+    </div>
+   
+    </a>
+    <div class="button-container">
+     <a  class="contact-btn" id="contact-btn" href="contacto.html"> Contacto</a>
+   
+  </div>
+  </header>
+  
+<body>
+    <section id="blog-familia">
+        <h1> Direito de Família</h1>
+    
+        <article>
+            <h2>O que é o Direito de Família?</h2>
+            <p>
+                O Direito de Família é um ramo do Direito que regula as relações familiares, incluindo casamento, divórcio, adoção, guarda de filhos e pensão alimentícia. Este campo do Direito é essencial para garantir que as relações familiares sejam tratadas de forma justa e equitativa.
+            </p>
+    
+            <img src="fotos/Imagem WhatsApp 2024-10-04 às 11.39.46_2e13d424.jpg" alt="Direito de Família" style="width: 100%; height: auto; border-radius: 10px; margin-bottom: 20px;">
+    
+            <h2>Casamento e União Estável</h2>
+            <p>
+                O casamento é um contrato que cria obrigações e direitos entre os cônjuges, enquanto a união estável é uma forma de reconhecimento de uma relação que se assemelha ao casamento, mas sem a formalidade do registro. Ambas as situações têm implicações legais importantes, especialmente em questões patrimoniais e sucessórias.
+            </p>
+    
+            <h2>Divórcio e Separação</h2>
+            <p>
+                O divórcio é a dissolução do casamento e pode ser realizado de forma amigável ou litigiosa. É importante entender os direitos e deveres de cada parte, especialmente em relação à guarda de filhos e à partilha de bens. A separação, por sua vez, pode ser uma etapa anterior ao divórcio.
+            </p>
+    
+            <h2>Adoção</h2>
+            <p>
+                A adoção é um processo legal que permite que uma pessoa ou casal assuma legalmente a parentalidade de uma criança. Este processo envolve critérios rigorosos e a análise do bem-estar da criança, sempre priorizando seu interesse superior.
+            </p>
+    
+            <h2>Guarda de Filhos e Pensão Alimentícia</h2>
+            <p>
+                A guarda de filhos pode ser compartilhada ou unilateral, dependendo do que for melhor para a criança. A pensão alimentícia é uma obrigação financeira que um dos genitores deve cumprir para sustentar os filhos após a separação ou divórcio.
+            </p>
+    
+            <h2>Comentários</h2>
+            <div class="comentarios">
+                <textarea placeholder="Deixe sua dúvida..." rows="4"></textarea>
+                <button type="button">Enviar</button>
+            </div>
+        </article>
+    </section>
+    <a href="#" class="back-to-top" id="backToTop" title="Voltar ao topo">
+        &#8679; <!-- Seta para cima -->
+    </a>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-left">
+                <h3 class="footer1">Laura Sotto Mayor&Rui Manuel Fernandes</h3>
+                <p>&copy; 2024 Todos os direitos reservados.</p>
+            </div>
+            <div class="footer-center">
+                <ul>
+                    <li><a href="ADV.html">Home</a></li>
+                    <li><a href="ADV.html#sobrenos">Sobre Nós</a></li>
+                    <li><a href="ADV.html#servicos">Serviços</a></li>
+                    
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script>
+        // Mostrar/Ocultar o botão de voltar ao topo
+        const backToTopButton = document.getElementById("backToTop");
+    
+        window.onscroll = function() {
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                backToTopButton.style.display = "block"; // Exibe o botão
+            } else {
+                backToTopButton.style.display = "none"; // Oculta o botão
+            }
+        };
+    
+        // Ação ao clicar no botão
+        backToTopButton.addEventListener("click", function(e) {
+            e.preventDefault();
+            window.scrollTo({ top: 0, behavior: 'smooth' }); // Rola suavemente para o topo
+        });
+    </script>
+</body>
+</html>
