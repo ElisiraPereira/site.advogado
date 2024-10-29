@@ -11,6 +11,8 @@ html {
 
 body {
   font-family: Arial, sans-serif;
+  font-size: 100%;
+  padding: 0;
   
 }
 
@@ -20,6 +22,7 @@ body {
     bottom: 0;
 }
 
+/* cabeçalho*/
 .men{
  background-color: var(--pure);
  width: 100%;
@@ -99,8 +102,246 @@ border-radius: 15px;
 
 
 }
+/*responsivo para tablete parte de cabecaho*/
+@media only screen and (min-width: 600px) and (max-width: 1024px){
+  .men{
+    background-color: var(--pure);
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+   }
+   
+   
+   .men a {
+      
+       color: var(--dark);
+       text-decoration: none;
+       font-size: 1.5rem; 
+       padding: 15px;
+       margin-right: 4px;
+   }
+   
+   .men a:hover{
+       background-color: var(--primary);
+       box-shadow: inset 0 0 8px var(--dark);
+       color: var(--dark);
+       border-radius: 10px;
+       padding: 15px ;
+
+   }
+   
+   #menu{
+       padding-right: 35rem;
+       color: var(--pure);
+    
+   }
+   
+   
+   .menu-item{
+       position: relative;
+   }
+   
+   .submenu{
+       display: none;
+    position: absolute;
+   border-radius: 15px;
+       background-color:  var(--backgrounde);
+       top: 100%;
+       margin-left: -5px;
+       box-shadow: var(--primary);
+       opacity: 1;
+    
+   }
+  
+   .submenu a{
+      font-size: 28px;
+       display: block;
+       text-decoration: none;
+       color: var(--pure);
+     
+      
+   }
+   
+   .submenu a:hover{
+       background-color: var(--primary);
+   }
+  
+   .menu-item:hover .submenu{
+       display: block;
+   }
+   
+   .logo{
+       float: none;
+     margin-right:0;
+     margin-left: 42rem;
+     width: 275px;
+     padding: 20px;
+}
+
+#sobrenos h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 1rem;
+  margin-top: 8rem;
+
+}
+.btn-contato {
+  position: relative;
+    padding: 10px;
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 50px ;
+   
+
+}
+
+}
 
 
+
+/*responsivo para telemovel parte de cabecaho*/
+@media only screen and (max-width: 600px)  {
+  
+  
+  .men{
+    background-color: var(--pure);
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+   }
+   
+   .men a {
+      
+       color: var(--dark);
+       text-decoration: none;
+       font-size: 1rem; 
+       padding: 3.5px;
+   }
+   
+   .men a:hover{
+       background-color: var(--primary);
+       box-shadow: inset 0 0 8px var(--dark);
+       color: var(--dark);
+       border-radius: 10px;
+       padding: 15px ;
+
+   }
+   
+   #menu{
+       padding-right: 35rem;
+       color: var(--pure);
+    
+   }
+   
+   
+   .menu-item{
+       position: relative;
+   }
+   
+   .block{
+    white-space: nowrap;
+  }
+
+  .none{
+    display: none;
+  }
+  .blocked{
+    display: block;
+  }
+
+
+
+   .submenu{
+       display: none;
+    position: absolute;
+   border-radius: 15px;
+       background-color:  var(--backgrounde);
+       top: 100%;
+       margin-left: -85px;
+       box-shadow: var(--primary);
+       opacity: 1;
+       z-index: 1; 
+   }
+  
+   .submenu a{
+      font-size: 20px;
+       display: block;
+       text-decoration: none;
+       color: var(--pure);
+      
+   }
+   
+   .submenu a:hover{
+       background-color: var(--primary);
+   }
+  
+   .menu-item:hover .submenu{
+       display: block;
+   }
+   
+   .logo{
+       float: none;
+     margin-right:0;
+     margin-left: 300px;
+     width: 175px;
+     padding: 20px;
+}
+#contact-btn{
+  display: none;
+}
+
+
+#sobrenos h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 1rem;
+  margin-top: 8rem;
+
+}
+.btn-contato {
+  position: relative;
+    padding: 10px;
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 50px ;
+   
+
+}
+
+.block{
+  white-space: nowrap;
+}
+
+}
+
+.blocked{
+  
+    display: none; /* Exibido em desktops e tablets */
+
+}
+
+
+
+
+
+
+
+
+/*secao "home" composicao da pagina principal*/
 .titulo h1{
 display: flex;
 justify-content: center;
@@ -137,7 +378,7 @@ color: var(--primary);
 }
 
  .img1{
-
+    margin-right: 20px;
     width: 100%;
     margin: auto;
     opacity: 1;
@@ -170,8 +411,7 @@ align-items: flex-start;
 .areas-atuacao{
     flex: 1;
     text-align: center;
-    padding: 20px;
-    
+    padding: 0;
     border-radius: 9px;
     box-shadow: 0 2px 10px rgba(34, 32, 32, 0.1);
     background-color: #3b3838;
@@ -264,21 +504,6 @@ align-items: flex-start;
     }
   }
   
-  #ch{
-    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),url(fotos/Captura\ de\ ecrã\ 2024-09-24\ 160758.png);
-    background-position: center;
-    background-size: cover;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-
-}
-#ch h1{
-    color: var(--pure);
-    size: 4rem;
-}
-
-
   /* Estilo das setas */
   button {
     position: absolute;
@@ -314,9 +539,368 @@ align-items: flex-start;
 #texto1{
     background-color: var(--dark);
     color: var(--pure);
-    font-size: 1.4rem;
+    font-size: 2rem;
     text-align: center;
     }
+
+/*responsivo para telemovel parte de home*/
+@media only screen and (max-width: 600px)  {
+
+  .home{
+    position: relative;
+  width: 100%; 
+  height: 200px; 
+  }
+    .titulo h1{
+    display: flex;
+    justify-content: center;
+    color: var(--primary);
+    }
+    .titulo h2{
+   display: flex;
+    justify-content: center;
+    color: var(--primary);
+    }
+    .titulo{
+    width: 100vh;
+    height: 190px;
+    top: 160px;
+    left: 360px;
+    position: absolute;
+    background: rgba(17, 17, 17, 0.6);
+    opacity: 0;
+    transition: 0.6s; 
+    }
+    .titulo:hover{
+    opacity: 1;
+    }
+    .titulo > *{
+    transform: translateY(25);
+    transition: transform 0.6s;
+    }
+    .titulo:hover > *{
+    transform: translateY(0px); 
+    }
+    .img1{
+    position: absolute;
+    top: 0;
+    left: 0;
+     width: 100%;
+    height: 350px;
+  
+     }
+    .img2{
+    width: 40%;
+    height: 50%;
+    }
+    .areas{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0; 
+    opacity: 0.9;
+    background-color: rgba(0, 0, 0, 0.5); 
+    }
+    .areas-atuacao{
+    flex: 1;
+    text-align: center;
+    padding: 0;
+    border-radius: 9px;
+    box-shadow: 0 2px 10px rgba(34, 32, 32, 0.1);
+    background-color: #3b3838;
+    color: black;
+    text-align: center;
+    width: 55%;
+    border-radius: 6px;
+    font-family: Arial, sans-serif;
+    }
+    .slider {
+    width: 100%;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+       }
+    .slide {
+    position: absolute;
+    top: 0;
+    left: 0;  
+    width: 100%;
+    height: 100%;
+    background-color: lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: left 0.5s ease-in-out;
+    opacity: 0;
+    } 
+      .slide.active {
+            right: 0;    
+           opacity: 1;
+                   }
+      #slide {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50vh; 
+            text-align: center; 
+                    }
+       #slide h1 {
+            overflow: hidden;
+            animation: animate 3s linear infinite;
+            filter: hue-rotate(0deg);
+            font-family: 'Playfair Display', serif;
+            font-size: 2em;
+            font-weight: 700;
+            background: linear-gradient(90deg, #92852f, #ff5f6d, #ffc371);
+            background-size: 150%;
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            animation: shine 4s linear infinite;
+            text-shadow: 0px 0px 8px rgba(121, 108, 28, 0.8), 0px 0px 16px rgba(255, 95, 109, 0.6);
+            letter-spacing: 0.05em;
+            margin: 0;
+           }
+   #ch{
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),url(fotos/Captura\ de\ ecrã\ 2024-09-24\ 160758.png);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    height: 20rem;
+    }
+  #ch h1{
+    color: var(--pure);
+    font-size: 1.5rem;
+      }
+  button {
+    position: absolute;
+    top: 80%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    font-size: 28px;
+  }
+        button.prev {
+          left: 10px;
+        }
+        button.next {
+          right: 10px;
+        }
+        button:hover {
+          background-color: rgba(0, 0, 0, 0.8);
+        }
+
+.slide  .container  {
+    position: relative;
+    font-size: 40px;
+    font-weight: bold;
+    color: #333;
+}
+#texto1{
+  background-color: var(--dark);
+  color: var(--pure);
+  font-size: 0.9rem;
+  text-align: center;
+  }
+
+}
+  
+
+/*responsivo para tablete parte de home*/
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
+
+  .home{
+    position: relative;
+  width: 100%; 
+  height: 200px; 
+  }
+    .titulo h1{
+    display: flex;
+    justify-content: center;
+    color: var(--primary);
+    }
+    .titulo h2{
+   display: flex;
+    justify-content: center;
+    color: var(--primary);
+    }
+    .titulo{
+    width: 100vh;
+    height: 190px;
+    top: 160px;
+    left: 360px;
+    position: absolute;
+    background: rgba(17, 17, 17, 0.6);
+    opacity: 0;
+    transition: 0.6s; 
+    }
+    .titulo:hover{
+    opacity: 1;
+    }
+    .titulo > *{
+    transform: translateY(25);
+    transition: transform 0.6s;
+    }
+    .titulo:hover > *{
+    transform: translateY(0px); 
+    }
+    .img1{
+    position: absolute;
+    top: 0;
+    left: 0;
+     width: 100%;
+    height: 350px;
+  
+     }
+    .img2{
+    width: 40%;
+    height: 50%;
+    }
+    .areas{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0; 
+    opacity: 0.9;
+    background-color: rgba(0, 0, 0, 0.5); 
+    }
+    .areas-atuacao{
+    flex: 1;
+    text-align: center;
+    padding: 0;
+    border-radius: 9px;
+    box-shadow: 0 2px 10px rgba(34, 32, 32, 0.1);
+    background-color: #3b3838;
+    color: black;
+    text-align: center;
+    width: 55%;
+    border-radius: 6px;
+    font-family: Arial, sans-serif;
+    }
+    .slider {
+    width: 100%;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+       }
+    .slide {
+    position: absolute;
+    top: 0;
+    left: 0;  
+    width: 100%;
+    height: 100%;
+    background-color: lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: left 0.5s ease-in-out;
+    opacity: 0;
+    } 
+      .slide.active {
+            right: 0;    
+           opacity: 1;
+                   }
+      #slide {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50vh; 
+            text-align: center; 
+                    }
+       #slide h1 {
+            overflow: hidden;
+            animation: animate 3s linear infinite;
+            filter: hue-rotate(0deg);
+            font-family: 'Playfair Display', serif;
+            font-size: 4em;
+            font-weight: 700;
+            background: linear-gradient(90deg, #92852f, #ff5f6d, #ffc371);
+            background-size: 150%;
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            animation: shine 4s linear infinite;
+            text-shadow: 0px 0px 8px rgba(121, 108, 28, 0.8), 0px 0px 16px rgba(255, 95, 109, 0.6);
+            letter-spacing: 0.05em;
+            margin-bottom: 15rem;
+           }
+   #ch{
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),url(fotos/Captura\ de\ ecrã\ 2024-09-24\ 160758.png);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    height: 20rem;
+    }
+  #ch h1{
+    color: var(--pure);
+    font-size: 2rem;
+      }
+  button {
+    position: absolute;
+    top: 80%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    font-size: 28px;
+  }
+        button.prev {
+          left: 10px;
+        }
+        button.next {
+          right: 10px;
+        }
+        button:hover {
+          background-color: rgba(0, 0, 0, 0.8);
+        }
+
+.slide  .container  {
+    position: relative;
+    font-size: 40px;
+    font-weight: bold;
+    color: #333;
+}
+#texto1{
+  background-color: var(--dark);
+  color: var(--pure);
+  font-size: 1.4rem;
+  text-align: center;
+  }
+
+}
+  
+
+#ch{
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),url(fotos/Captura\ de\ ecrã\ 2024-09-24\ 160758.png);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+
+}
+#ch h1{
+    color: var(--pure);
+    size: 4rem;
+}
+
+#ch .areas-atuacao{
+  right: 130px;
+}
+
 /*---CONTACT*/
 
 .contact-us{
@@ -405,7 +989,6 @@ box-sizing: border-box;
     text-decoration: none;
     outline: none; /* Remove o contorno padrão do botão */
     transition: background-color 0.3s, transform 0.3s; /* Efeitos de transição */
-  
   }
   
   /* Efeito ao passar o mouse */
@@ -459,7 +1042,7 @@ box-sizing: border-box;
     bottom: 1.5rem;
     padding:10px 15px;
     font-size: 20px;
-    left: 2rem;
+    left: 0rem;
  }
 
 .foto {
@@ -472,28 +1055,7 @@ box-sizing: border-box;
   border-radius: 50%; /* Deixa a imagem circular */
   max-height: 150px; /* Limita a altura da imagem */
 }
-/* #sobre-nos {
-  text-align: center;
-  padding: 50px;
-  background-color: #f9f9f9;
-}
 
-.advogados-container {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  flex-wrap: wrap;
-}
-
-.advogado {
-  background-color: #fff;
-  border: 2px solid #4CAF50;
-  border-radius: 10px;
-  padding: 20px;
-  width: 300px; /* Largura fixa para as caixas 
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-*/
 h1 {
   margin-bottom: 30px;
   font-size: 2.5rem;
@@ -593,6 +1155,10 @@ position: relative;
   background-color: #f9f9f9;
   font-family: 'Arial', sans-serif;
   text-align: center;
+}
+.none{
+  display: inline;
+  white-space: nowrap;
 }
 
 h1 {
@@ -746,4 +1312,56 @@ footer {
 
 .cor{
   color: var(--pure);
+}
+
+
+
+
+.centralizar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Ocupa 100% da altura do ecrã */
+  text-align: center;
+}
+
+.centralizar h1 {
+  margin-bottom: 20px; /* Ajusta a margem entre o parágrafo e o link */
+}
+
+.centralizar a {
+  margin-top: 10px; /* Diminui o espaço entre o parágrafo e o link */
+  text-decoration: none;
+  color: var(--primary);
+  font-size: solid 1rem;
+  border-bottom: var(--primary);
+}
+
+/* Estilo do botão criado com a div */
+.meu-botao {
+  display: inline-block;
+  padding: 15px 32px;
+  background-color: var(--dark);
+  text-align: center;
+  font-size: 16px;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  user-select: none; /* Evita a seleção de texto ao clicar */
+}
+
+/* Efeito ao passar o mouse por cima do botão */
+.meu-botao:hover {
+  background-color:var(--primary);
+  color: var(--dark);
+  font-size: 1.2rem;
+}
+
+/* Efeito de clique (simula uma pequena redução no botão) */
+.meu-botao:active {
+  transform: scale(0.98); /* Reduz ligeiramente o tamanho */
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* Menor sombra ao clicar */
 }

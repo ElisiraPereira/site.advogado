@@ -474,3 +474,203 @@ footer {
         font-size: 18px;
     }
 }
+
+@media  (max-width: 768px) {
+  
+    .men{
+        background-color: var(--pure);
+        width: 10%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+       }
+       
+       .men a {
+          
+           color: var(--dark);
+           text-decoration: none;
+           font-size: 1rem; 
+           padding: 8px;
+       }
+       
+       .men a:hover{
+           background-color: var(--primary);
+           box-shadow: inset 0 0 8px var(--dark);
+           color: var(--dark);
+           border-radius: 10px;
+           padding: 15px ;
+    
+       }
+       
+       #menu{
+           padding-right: 35rem;
+           color: var(--pure);
+        
+       }
+       
+       
+       .menu-item{
+           position: relative;
+       }
+       
+       .submenu{
+           display: none;
+        position: absolute;
+       border-radius: 15px;
+           background-color:  var(--backgrounde);
+           top: 100%;
+           margin-left: -100px;
+           box-shadow: var(--primary);
+           opacity: 1;
+           z-index: 1; 
+       }
+      
+       .submenu a{
+          font-size: 20px;
+           display: block;
+           text-decoration: none;
+           color: var(--pure);
+          
+       }
+       
+       .submenu a:hover{
+           background-color: var(--primary);
+       }
+      
+       .menu-item:hover .submenu{
+           display: block;
+       }
+       
+       .logo{
+           float: none;
+         margin-right:0;
+         margin-left: 350px;
+         width: 190px;
+         padding: 20px;
+    }
+  #contact-btn{
+    display: none;
+  }
+.blocked{
+    display: block; 
+ }
+
+.none{
+  display: none;
+}
+
+}  
+
+/*responsivo para tablete parte de cabecaho*/
+@media only screen and (min-width: 600px) and (max-width: 1024px){
+    .men{
+      background-color: var(--pure);
+      width: 10%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+     }
+     
+     .men a {
+        
+         color: var(--dark);
+         text-decoration: none;
+         font-size: 1.5rem; 
+         padding: 15px;
+         margin-right: 4px;
+     }
+     
+     .men a:hover{
+         background-color: var(--primary);
+         box-shadow: inset 0 0 8px var(--dark);
+         color: var(--dark);
+         border-radius: 10px;
+         padding: 15px ;
+  
+     }
+     
+     #menu{
+         padding-right: 35rem;
+         color: var(--pure);
+      
+     }
+     
+     
+     .menu-item{
+         position: relative;
+     }
+     
+     .submenu{
+         display: none;
+      position: absolute;
+     border-radius: 15px;
+         background-color:  var(--backgrounde);
+         top: 100%;
+         margin-left: -5px;
+         box-shadow: var(--primary);
+         opacity: 1;
+      
+     }
+    
+     .submenu a{
+        font-size: 28px;
+         display: block;
+         text-decoration: none;
+         color: var(--pure);
+       
+        
+     }
+     
+     .submenu a:hover{
+         background-color: var(--primary);
+     }
+    
+     .menu-item:hover .submenu{
+         display: block;
+     }
+     
+     .logo{
+         float: none;
+       margin-right:0;
+       margin-left: 42rem;
+       width: 275px;
+       padding: 20px;
+  }
+  
+  #sobrenos h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+    margin-top: 8rem;
+  
+  }
+  .btn-contato {
+    position: relative;
+      padding: 10px;
+      background-color: var(--primary);
+      color: white;
+      border: none;
+      border-radius: 5px;
+      text-align: center;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      margin-bottom: 50px ;
+     
+  
+  }
+  .contact-btn{
+display: none;
+  }
+
+ 
+  }
+
+  .blocked{
+    display: none;
+  }
+
+  .none{
+    display: block;
+  }

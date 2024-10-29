@@ -11,11 +11,18 @@
   
     <div class="men">
       <img class="logo" src="fotos/Logotipo Nome Minimalista Branco e Preto.png" alt="">
-      <a href="ADV.html">Home</a>
-     <a href="ADV.html#sobrenos">Sobre nós</a>
+    <a class="none"  href="ADV.html">Home</a>
+    <a class="blocked"  href="contacto.html">Contacto</a>
      <a href="ADV.html#servicos">Serviços</a>
      <div class="menu-item">
-   
+     <a   href="#">Blog
+      <div class="submenu">
+        <a href="blogHera.html">Direito á Herança</a>
+        <a href="blogFam.html">Direito de Familia</a>
+        <a href="blogNac.html">Direito Residência e Nacionalidade</a>
+        
+        
+      </div>
     </div>
    
     </a>
@@ -56,17 +63,26 @@
             <p>
                 A guarda de filhos pode ser compartilhada ou unilateral, dependendo do que for melhor para a criança. A pensão alimentícia é uma obrigação financeira que um dos genitores deve cumprir para sustentar os filhos após a separação ou divórcio.
             </p>
-    
+            
             <h2>Comentários</h2>
             <div class="comentarios">
+                <form action="https://formsubmit.co/pereiraelisira@outlook.com" method="POST">
                 <textarea placeholder="Deixe sua dúvida..." rows="4"></textarea>
-                <button type="button">Enviar</button>
+                <button type="submit">Enviar</button>
+                <input type="hidden" name="_subject" value="Novo Contacto!">
+                <input type="text" name="_honey" style="display:none">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_next" value="http://127.0.0.1:5500/entraremos.html">
+            </form>
             </div>
         </article>
     </section>
+    
+   
     <a href="#" class="back-to-top" id="backToTop" title="Voltar ao topo">
         &#8679; <!-- Seta para cima -->
     </a>
+  
     <footer>
         <div class="footer-container">
             <div class="footer-left">
@@ -75,7 +91,8 @@
             </div>
             <div class="footer-center">
                 <ul>
-                    <li><a href="ADV.html">Home</a></li>
+                    <li class="aparacer"><a href="ADV.html">Home</a></li>
+                    <li class="naoaparecer"><a href="contacto.html">Contacto</a></li>
                     <li><a href="ADV.html#sobrenos">Sobre Nós</a></li>
                     <li><a href="ADV.html#servicos">Serviços</a></li>
                     
